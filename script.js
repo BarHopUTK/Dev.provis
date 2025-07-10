@@ -1262,12 +1262,12 @@ function showLearnMoreModal(title, index) {
             title: "Cost-Effective Solution",
             content: `
                 <h3>Budget-Friendly Safety</h3>
-                <p>ProTrack Safety Solutions provides enterprise-grade protection at a fraction of traditional radar system costs, making advanced detection accessible to airports of all sizes.</p>
+                <p>ProTrack provides enterprise-grade protection at a fraction of traditional radar system costs, making advanced detection accessible to airports of all sizes.</p>
                 
                 <h4>Cost Comparison:</h4>
                 <ul>
                     <li>Traditional radar: $2-5 million per installation</li>
-                    <li>ProTrack Safety Solutions system: $200,000-500,000 per installation</li>
+                    <li>ProTrack system: $200,000-500,000 per installation</li>
                     <li>90% cost reduction with superior performance</li>
                     <li>Modular design allows for gradual expansion</li>
                     <li>Low maintenance requirements reduce operational costs</li>
