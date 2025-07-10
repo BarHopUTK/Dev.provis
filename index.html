@@ -12,8 +12,11 @@
     <div id="preloader">
         <div class="preloader-content">
             <div class="logo-container">
-                <h1 class="preloader-logo">PROTRACK</h1>
-                <p class="preloader-subtitle">SAFETY SOLUTIONS</p>
+                <img src="LOGO FINAL PNG White.png" alt="ProTrack Logo" class="preloader-logo-image">
+                <div class="preloader-text-container">
+                    <h1 class="preloader-logo">PROTRACK</h1>
+                    <p class="preloader-subtitle">SAFETY SOLUTIONS</p>
+                </div>
             </div>
         </div>
     </div>
@@ -22,8 +25,11 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">PROTRACK</span>
-                <span class="logo-subtitle">SAFETY SOLUTIONS</span>
+                <img src="LOGO FINAL PNG White.png" alt="ProTrack Logo" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">PROTRACK</span>
+                    <span class="logo-subtitle">SAFETY SOLUTIONS</span>
+                </div>
             </div>
             <div class="nav-links">
                 <a href="#">Home</a>
@@ -52,6 +58,14 @@
                     </h1>
                 </div>
                 <p class="hero-subtitle">Advanced optical tracking system for airports preventing bird strikes, tracking unauthorized drone, and investing in safety - not in radar arrays</p>
+                
+                <!-- Contact Button -->
+                <div class="contact-button-container">
+                    <button class="contact-btn" id="contactBtn">
+                        <span class="contact-btn-text">Get In Touch</span>
+                        <span class="contact-btn-icon">✉</span>
+                    </button>
+                </div>
                 
                 <!-- Animation Container -->
                 <div class="animation-container overlay-align">
@@ -83,6 +97,67 @@
             </div>
         </section>
     </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h2>Contact ProTrack Safety Solutions</h2>
+                <button class="contact-modal-close" id="contactModalClose">&times;</button>
+            </div>
+            <div class="contact-modal-body">
+                <p class="contact-modal-subtitle">Ready to enhance your airport's safety? Get in touch with our team of experts.</p>
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/spencerd@protracksafety.com" method="POST">
+                                        <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Contact from ProTrack Safety Solutions Website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting ProTrack Safety Solutions! We've received your message and will respond within 24 hours.">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <div class="form-group">
+                        <label for="contactName">Full Name *</label>
+                        <input type="text" id="contactName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactCompany">Company/Organization</label>
+                        <input type="text" id="contactCompany" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <select id="contactSubject" name="subject" required>
+                            <option value="">Select a topic...</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Request Demo">Request Demo</option>
+                            <option value="Pricing Information">Pricing Information</option>
+                            <option value="Technical Questions">Technical Questions</option>
+                            <option value="Partnership Opportunities">Partnership Opportunities</option>
+                            <option value="Support">Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell us about your airport's safety needs and how we can help..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="contact-submit-btn">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-spinner"></span>
+                        </button>
+                    </div>
+                </form>
+                <div id="contactFormResult" class="contact-form-result"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

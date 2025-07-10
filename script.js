@@ -1490,3 +1490,162 @@ document.addEventListener('DOMContentLoaded', function() {
         setupComingSoonAnimation();
     }
 }); 
+
+// Contact Modal Functionality
+function initContactModal() {
+    const contactBtn = document.getElementById('contactBtn');
+    const contactModal = document.getElementById('contactModal');
+    const contactModalClose = document.getElementById('contactModalClose');
+    const contactForm = document.getElementById('contactForm');
+    const contactFormResult = document.getElementById('contactFormResult');
+
+    if (!contactBtn || !contactModal) return;
+
+    // Open modal
+    contactBtn.addEventListener('click', function() {
+        contactModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close modal functions
+    function closeModal() {
+        contactModal.classList.remove('show');
+        document.body.style.overflow = '';
+        contactFormResult.style.display = 'none';
+        contactFormResult.className = 'contact-form-result';
+    }
+
+    // Close modal on close button click
+    if (contactModalClose) {
+        contactModalClose.addEventListener('click', closeModal);
+    }
+
+    // Close modal on outside click
+    contactModal.addEventListener('click', function(e) {
+        if (e.target === contactModal) {
+            closeModal();
+        }
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && contactModal.classList.contains('show')) {
+            closeModal();
+        }
+    });
+
+    // Handle form submission
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Validate form before submission
+            const formData = new FormData(contactForm);
+            const errors = validateContactForm(formData);
+            
+            if (errors.length > 0) {
+                e.preventDefault();
+                showFormResult(contactFormResult, 'error', errors[0]);
+                return;
+            }
+            
+            // Show loading state (form will submit to FormSubmit)
+            const submitBtn = contactForm.querySelector('.contact-submit-btn');
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            contactFormResult.style.display = 'none';
+            
+            // Show success message before redirect
+            setTimeout(() => {
+                showFormResult(contactFormResult, 'success', 
+                    'Sending your message... You will be redirected to a confirmation page shortly.'
+                );
+            }, 500);
+        });
+    }
+}
+
+// FormSubmit integration - no longer need custom email handling
+
+// Show form result message
+function showFormResult(resultDiv, type, message) {
+    resultDiv.className = `contact-form-result ${type}`;
+    resultDiv.innerHTML = message;
+    resultDiv.style.display = 'block';
+    
+    // Auto-hide success messages after 10 seconds
+    if (type === 'success') {
+        setTimeout(() => {
+            resultDiv.style.display = 'none';
+        }, 10000);
+    }
+}
+
+
+
+// Enhanced form validation
+function validateContactForm(formData) {
+    const errors = [];
+    
+    if (!formData.get('name') || formData.get('name').trim().length < 2) {
+        errors.push('Name must be at least 2 characters long');
+    }
+    
+    if (!formData.get('email')) {
+        errors.push('Email is required');
+    } else {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.get('email'))) {
+            errors.push('Please enter a valid email address');
+        }
+    }
+    
+    if (!formData.get('subject')) {
+        errors.push('Please select a subject');
+    }
+    
+    if (!formData.get('message') || formData.get('message').trim().length < 10) {
+        errors.push('Message must be at least 10 characters long');
+    }
+    
+    // Phone validation (optional but if provided, should be valid)
+    const phone = formData.get('phone');
+    if (phone && phone.trim() !== '') {
+        const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+        if (!phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))) {
+            errors.push('Please enter a valid phone number');
+        }
+    }
+    
+    return errors;
+}
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize contact modal
+    initContactModal();
+    
+    // Check if user returned from FormSubmit
+    if (document.referrer.includes('formsubmit.co')) {
+        // Show thank you message for users returning from FormSubmit
+        setTimeout(() => {
+            const contactBtn = document.getElementById('contactBtn');
+            if (contactBtn) {
+                contactBtn.textContent = '✓ Message Sent! Click to Send Another';
+                contactBtn.style.background = 'linear-gradient(135deg, #00ff88, #00cc77)';
+            }
+        }, 1000);
+    }
+    
+    // Add smooth focus transitions for form inputs
+    const formInputs = document.querySelectorAll('.contact-form input, .contact-form select, .contact-form textarea');
+    formInputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentElement.classList.remove('focused');
+            }
+        });
+    });
+}); 
