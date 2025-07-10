@@ -1,0 +1,52 @@
+Week 2
+Pains, Gains, and Jobs for at least 2 customer segments 
+Once all of these are identified, number and prioritize the top 3 items within each category (so, your top 1, 2, 3 for each customer segment’s pains, gains, and jobs)
+2 variations of your Business Hypothesis
+-For Pilots (User): My avian detection system is for pilots who are looking to Stop relying on just their eyes to spot Birds/drones and bring (professional) modern avain tracking to the tarmacs big and small.
+-For Airport Management (Buyer #1): My avian detection system is for Airports looking to Minimize the chances of a Bird/Drone Strikes occurring and keep airport operations running smoothly. 
+-Security (Buyer #2): My drone detection system is for Stadiums looking to ID and track drones operating in prohibited air space and keep guests/fans safe. 
+-Security (Buyer #2): My drone detection system is for Militaries looking to ID and track drones operating in prohibited air space and keep troops informed and aware. 
+-UT LifeStar (Buyer #3): My avian detection system is for Hospitals operating helicopters who are looking to Prevent a catastrophic accidents, keep pilots safe, and aircraft operational. 
+-For Investors: My avian detection system is for Airports looking to bring to Increase awareness, minimize risk, and prevent tragedy. 
+
+I feel like a lot of my pitches are operating on the same note/theme. I am struggling to ID how to distinguish which is my Pain relief vs Gains so pointers here are appreciated. 
+10 Website Inspirations 
+Think of websites that follow along with what you’re wanting to achieve. Some can reflect your intended style, while others may reflect the communication and customer strategy. Provide quick commentary by each noted website. (Not apps, simply websites at this point in the program.)
+Screenshots from your own work-in-progress website 
+Using  (and any other tool that you may prefer or want), create a preliminary draft of your own website on your computer (does not have to be hosted at this point). 
+Once you do, Take screenshots and submit those screenshots with your deliverables here.
+
+WRITTEN REFELCTION
+Problem –
+The problem that my target audience is facing is that small airports can't afford expensive radar arrays for tracking birds, thus leaving them unprotected. The main constraint for a lot of these airports unfortunately is budget so that also means that they also can't afford the extra staff which sometimes supplement radar stations at large international airports. This means that it is the responsibility of the pilot to keep their eyes peeled for birds and drones during takeoff and landing, when pilots are already under the maximum stress. 
+Target Audience – Who makes up your target audience. 
+The target audience from my product is primarily airports themselves. Larger system acquisition processes commonly fall under the jurisdiction of airport management. However, I think that my product will be most used by air traffic controllers. As we face a national shortage of air traffic control operators my product aims To give pilots and controllers a crucial piece of information during the most dangerous part of air travel.
+Founder-Market Fit -- Why this field and area interests you (and what makes you qualified to tackle this problem area)
+Until more recently, with incredible revelations in artificial intelligence, A product like this could have only been designed by a highly skilled software or radar engineer could have manufactured. My background which is in business and AI, has allowed me to bring my own unique skills to the entrepreneurial playing field, while I let the software handle the software. My skills include adaptability, creative problem solving, and business leadership Allow me to bring a completely new perspective to this niche yet crucial issue
+Solution -- What is your product or service
+unlike the traditional, large radar arrays, that the big budget airports use, my solution is a camera array system that triangulates objects, Primarily birds and drones, in air. Giving air traffic controllers and pilots this crucial piece of information has the potential to save lives and prevent tragedy while keeping airport operations running smoothly and reducing damage to aircraft. I imagine my system being connected to air traffic controllers, allowing them to give pilots a heads up when a bird or drone is operating in restricted airspace. 
+Market Fit -- How does it solve a gap in the market
+Avian radar systems can cost as much as replacing an airliner itself, yet these large airports have been able to justify the costs for obvious reasons. For many airports, preventing tragedy goes far beyond preventing loss of life, But I would argue exceeds all the way into preventing loss of airport life. There was no worse nightmare for airports, pilots, and passengers alike then an emergency landing or crash. Unfortunately these small airports simply don't have anywhere near the budget to afford any radar at all let alone one just for birds. That's why my product aims to fit well within the budgets of these small airports, while still meeting the requirements of the FAA (which could potentially allow airports to apply for federal grants money for my product). 
+ELEVATOR PITCH
+
+
+SS25 – BIRDS
+KEY FINDINGS
+
+DRONES
+in 2024, with drones accounting for nearly two-thirds of reported near midair collisions involving commercial passenger planes at the country’s top 30 busiest airports 
+FAA data shows that reports of drone incursions in restricted airspace surged nearly 26% in the first three months of 2025 compared to the same period in 2024 
+FAA research demonstrates that drone collisions pose greater structural risks than bird strikes of similar weight. 
+BIRDS
+January 2025: A drone struck a firefighting “super scooper” aircraft during the Palisades Fire, creating a 3-inch-by-6-inch hole in the wing and grounding the aircraft for five days
+A bird strike in General Aviation is roughly 125× more likely to result in a fatality than in commercial aviation.
+EXAMPLES 
+January 2025: A drone struck a firefighting “super scooper” aircraft during the Palisades Fire, creating a 3-inch-by-6-inch hole in the wing and grounding the aircraft for five days 
+UT LIFESTAR operates 2,400 flights annually, over 3,600 fl/hr. UT LIFESTAR has a 6.32% chance of at least one bird or drone collision somewhere in the fleet each year (based on 2025 data). That’s about a 1 in 16 annual risk fleetwide. 
+
+This application leverages a passive, non-radar optical system to track airborne objects, addressing critical gaps in traditional airport surveillance.
+Instead of emitting radar waves, it uses a network of affordable, off-the-shelf cameras in a stereo configuration. By detecting motion from multiple camera viewpoints simultaneously and performing 3D triangulation, the system can:
+	•	Precisely locate even small, low-flying objects like birds and drones in real-time – targets often missed or poorly resolved by conventional radar.
+	•	Provide accurate 3D positional data, crucial for understanding flight paths and potential collision risks.
+	•	Offer a cost-effective and scalable alternative to expensive radar installations.
+For local municipal airports, this translates to significantly enhanced safety and situational awareness, allowing for proactive management of hazards such as bird strike prevention and detection of unauthorized drone incursions within controlled airspace.

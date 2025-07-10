@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Eye - Advanced Avian Detection System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <h1 class="preloader-logo">EAGLE EYE</h1>
+                <p class="preloader-subtitle">AVIAN DETECTION</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">EAGLE EYE</span>
+                <span class="logo-subtitle">AVIAN DETECTION</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#solution">Solution</a>
+                <a href="#alerts">Alerts</a>
+                <a href="#contact">Contact</a>
+                <a href="get-started.html" class="get-started-nav-btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background" id="heroBg">
+                <img src="photo-1503412345334-7d4ca6c34f61.jpeg" alt="Airport Background" class="hero-image" id="heroImage">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="typing-container">
+                    <h1 class="hero-title">
+                        <span class="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                </div>
+                <p class="hero-subtitle">Advanced optical tracking system for airports preventing bird strikes, tracking unauthorized drone, and investing in safety - not in radar arrays</p>
+                
+                <!-- Animation Container -->
+                <div class="animation-container overlay-align">
+                    <img src="plane.png" alt="Aircraft" class="parallax-plane" id="plane">
+                    <div class="birds-container" id="birdsContainer">
+                        <!-- Birds will be populated by JS -->
+                    </div>
+                    <svg class="tracking-lines" id="trackingLines">
+                        <!-- Lines will be drawn by JS -->
+                    </svg>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="solution-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>
+                        <span class="solution-typed-text">OUR SOLUTION</span>
+                        <span class="solution-cursor">|</span>
+                    </h2>
+                    <h3>Passive optical tracking technology that doesn't break the budget</h3>
+                </div>
+                
+                <div class="solution-grid">
+                    <div class="solution-item fade-in">
+                        <div class="solution-icon"><img src="camera.png" alt="Camera module" style="max-width: 60px; max-height: 60px;"></div>
+                        <h3>Camera Arrays</h3>
+                        <p>Network of affordable, off-the-shelf cameras in scalable configuration</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="solution-item fade-in">
+                        <div class="solution-icon"><img src="small airport traciing.png" alt="Small airport triangulation diagram" style="max-width: 60px; max-height: 60px;"></div>
+                        <h3>3D Triangulation</h3>
+                        <p>Precise real-time location tracking of small, low-flying objects</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    <div class="solution-item fade-in">
+                        <div class="solution-icon"><img src="image.png" alt="Grass runway cost-effective"></div>
+                        <h3>Cost-Effective</h3>
+                        <p>Scalable alternative to expensive radar installations</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="technical-showcase fade-in">
+                    <div class="tech-image">
+                        <img src="homepage bottom.jpg" alt="Technical Setup" class="bottom-image">
+                    </div>
+                    <div class="tech-content">
+                        <h3>How It Works</h3>
+                        <ul>
+                            <li>Motion detection from multiple camera viewpoints</li>
+                            <li>Real-time 3D triangulation processing</li>
+                            <li>Integration with air traffic control systems</li>
+                            <li>Proactive hazard management alerts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospital Animation Section -->
+        <section class="hospital-hero">
+            <div class="hospital-hero-background">
+                <img src="4b32e5df-cfc9-45e2-b489-6329a3e9399a-full9x16_Sep2720194_23PM_20190930_135019.jpg" alt="Children's Hospital Helipad" class="hospital-hero-image">
+                <div class="hospital-hero-overlay"></div>
+                <img src="heli 3.png" alt="UT Lifestar Helicopter" class="heli-anim" id="heliAnim">
+                <img src="drone" alt="Drone" class="drone-anim" id="droneAnim">
+                <svg class="tracking-lines" id="hospitalTrackingLines">
+                    <!-- Hospital tracking lines will be drawn by JS -->
+                </svg>
+                
+                <!-- Hospital Typing Animation -->
+                <div class="hospital-typing-container">
+                    <h1 class="hospital-hero-title">
+                        <span class="hospital-typed-text"></span>
+                        <span class="hospital-cursor">|</span>
+                    </h1>
+                    <p class="hospital-hero-subtitle">UT LifeStar operates 2,400 flights annually. Between 5 helicopters and 3 hospitals, the lifestar fleet has a 6.32% annual collision risk. </p>
+                </div>
+                
+                <!-- Hospital Bottom Subtitle -->
+                <div class="hospital-bottom-subtitle-container">
+                    <p class="hospital-hero-subtitle">FAA data shows that reports of drone incursions in restricted airspace surged nearly 26% in the first three months of 2025 compared to the same period in 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combined Drone Population Chart and Stats Section -->
+        <section class="drone-combined-chart-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>U.S. Recreational Drone Population: 2015–2025</h2>
+                    <p>Historical data - FAA</p>
+                </div>
+                <div class="chart-stats-container">
+                    <div class="chart-container">
+                        <canvas id="droneChart" style="max-width:100%;background:rgba(255,255,255,0.95);border-radius:12px;"></canvas>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stats-grid">
+                            <div class="stat-item fade-in">
+                                <h3>66%</h3>
+                                <p>Drones accounted for nearly two-thirds of reported near midair collisions at top 30 busiest airports</p>
+                            </div>
+                            <div class="stat-item fade-in">
+                                <h3>26%</h3>
+                                <p>Increase in drone incursions in restricted airspace (Q1 2025 vs Q1 2024)</p>
+                            </div>
+                            <div class="stat-item fade-in">
+                                <h3>125×</h3>
+                                <p>Drone collisions pose greater structural risks than bird strikes of similar weight</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drone-animation-container"></div>
+        </section>
+
+        <!-- Recent Alerts Section -->
+        <section id="alerts" class="alerts-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Recent Alerts & Incidents</h2>
+                    <p>Real-world examples highlighting the critical need for advanced detection</p>
+                </div>
+                
+                <div class="alerts-grid">
+                    <div class="alert-card priority-high fade-in">
+                        <div class="alert-header">
+                            <span class="alert-badge high">HIGH PRIORITY</span>
+                            <span class="alert-date">January 2025</span>
+                        </div>
+                        <h3>Firefighting Aircraft Strike</h3>
+                        <p>A drone struck a firefighting "super scooper" aircraft during the Palisades Fire, creating a 3-inch-by-6-inch hole in the wing and grounding the aircraft for five days.</p>
+                        <div class="alert-impact">
+                            <span class="impact-label">Impact:</span>
+                            <span class="impact-value">5-day operational shutdown</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-card priority-medium fade-in">
+                        <div class="alert-header">
+                            <span class="alert-badge medium">MEDIUM PRIORITY</span>
+                            <span class="alert-date">Q1 2025</span>
+                        </div>
+                        <h3>Commercial Aviation Near-Misses</h3>
+                        <p>Drones accounted for nearly two-thirds of reported near midair collisions involving commercial passenger planes at the country's top 30 busiest airports.</p>
+                        <div class="alert-impact">
+                            <span class="impact-label">Trend:</span>
+                            <span class="impact-value">66% of near-miss incidents</span>
+                        </div>
+                    </div>
+
+                    <div class="alert-card priority-medium fade-in">
+                        <div class="alert-header">
+                            <span class="alert-badge medium">RISK ANALYSIS</span>
+                            <span class="alert-date">2025 Data</span>
+                        </div>
+                        <h3>UT LifeStar Fleet Risk</h3>
+                        <p>Operating 2,400 flights annually (3,600 flight hours), UT LifeStar faces a 6.32% chance of at least one bird or drone collision annually - roughly 1 in 16 risk fleetwide.</p>
+                        <div class="alert-impact">
+                            <span class="impact-label">Annual Risk:</span>
+                            <span class="impact-value">1 in 16 chance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="live-monitoring fade-in">
+                    <h3>Live Monitoring Dashboard</h3>
+                    <div class="monitoring-grid">
+                        <div class="monitor-item">
+                            <span class="monitor-label">Active Cameras</span>
+                            <span class="monitor-value">12/12</span>
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="monitor-item">
+                            <span class="monitor-label">Objects Tracked (24h)</span>
+                            <span class="monitor-value">347</span>
+                            <span class="status-indicator warning"></span>
+                        </div>
+                        <div class="monitor-item">
+                            <span class="monitor-label">System Status</span>
+                            <span class="monitor-value">Operational</span>
+                            <span class="status-indicator online"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content fade-in">
+                    <h2>Ready to Enhance Airport Safety?</h2>
+                    <p>Contact us to learn how Eagle Eye can protect your operations</p>
+                    <a href="get-started.html" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
